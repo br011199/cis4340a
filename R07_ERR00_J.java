@@ -1,5 +1,6 @@
 try {
     // ...
-} catch (IOException ioe) {
-    ioe.printStackTrace();
+} catch (IOException warning) {
+    ExceptionReporter.getExceptionReporter().report(warning);
+    // Recover from the exception...
 }

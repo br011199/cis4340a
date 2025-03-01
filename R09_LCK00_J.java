@@ -1,8 +1,8 @@
 public class SomeObject {
-    public final Object lock = new Object();
+    private final Object lock = new Object(); // private final lock object
 
     public void changeValue() {
-        synchronized (lock) {
+        synchronized (lock) { // Locks on the private Object
             // ...
         }
     }
