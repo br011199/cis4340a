@@ -7,7 +7,7 @@ s = Normalizer.normalize(s, Form.NFKC);
 Pattern pattern = Pattern.compile("[<>]");
 Matcher matcher = pattern.matcher(s);
 if (matcher.find()) {
-    // Found black listed tag
+    // Found blacklisted tag
     throw new IllegalStateException();
 } else {
     // ...
